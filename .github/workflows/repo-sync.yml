@@ -25,7 +25,7 @@ jobs:
         if: env.PAT 
         with:
           source_repo: "https://github.com/ClydeTime/Quantumult"
-          source_branch: "main"
+          source_branch: "vip"
           destination_branch: "vip"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
       # 我自己同步到gitee使用，其他人可忽略
